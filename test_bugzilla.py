@@ -64,4 +64,4 @@ for item in team_to_email.items():
     msg += report(query, item[0], item[1])
     msg += '\n'
     msg += "*******************************\n\n"
-  email_send(os.environ['REPORT_OWNER'], item[1]+'@redhat.com', 'rdo-ci bugz', msg)
+  email_send(os.environ['REPORT_LIST'], item[1]+'@redhat.com', 'rdo-ci bugz', msg)
