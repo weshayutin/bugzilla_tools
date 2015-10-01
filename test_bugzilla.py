@@ -65,3 +65,4 @@ for item in team_to_email.items():
     msg += '\n'
     msg += "*******************************\n\n"
   email_send(os.environ['REPORT_LIST'], item[1]+'@redhat.com', 'rdo-ci bugz', msg)
+  msg = ""
