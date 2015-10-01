@@ -12,7 +12,7 @@ bz = bugzilla.Bugzilla(url='https://bugzilla.redhat.com/xmlrpc.cgi')
 bz.login(os.environ['BZ_USER'], os.environ['BZ_PASSWORD'])
 full_team = ast.literal_eval(os.environ['TEAM'])
 team_to_email = ast.literal_eval(os.environ['TEAM_TO_EMAIL'])
-ospd_triage = str(os.environ['OSPD_TRIAGE'])
+ospd_triage = str(os.environ['RED_HAT_OPENSTACK'])
 rdo_all = str(os.environ['RDO_ALL'])
 email_server = smtplib.SMTP('smtp.corp.redhat.com', 25)
 
